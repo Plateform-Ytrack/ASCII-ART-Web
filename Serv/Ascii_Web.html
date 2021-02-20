@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii_Web</title>
+</head>
+<body>
+
+    <center><h1>Bienvenue sur le module ASCII_ART_WEB</h1></center>
+    <hr>
+    <h2>Groupe :</h2>
+    <ul>
+        <li>Enzo PINOT</li> <!--Mettre les liens gitea par la suite-->
+        <li>Malo LOYER VIAUD</li>
+        <li>Elouan DUMONT</li>
+    </ul>
+    <hr>
+    <br>
+    <h3>Vous retrouverez les consignes du <a href="https://ytrack.learn.ynov.com/intra/nantes/modules-nantes/ascii-art-web">module</a> !</h3>
+
+    <br> <hr>
+
+    <form action="/serv_Ascii_web.go" method="POST">
+        <center><h4>Entrer la chaîne de caractère que vous souhaitez afficher en ASCII_ART !</h4></center>
+
+        <br>
+
+        <center><label for="string">Chaîne de caractère :</label>
+        <input type="texte" name="string" id="string">
+        <label for="option"></label>
+        <select name="option" id="option">
+            <option value="Standard">Standard</option>
+            <option value="Shadow">Shadow</option>
+            <option value="Thinkertoy">Thinkertoy</option>
+        </select></center>
+        <br>
+        <center><input type="submit" value="Valider"></center>
+        <br>
+
+    </form>
+
+    <h5>Résultat : </h5>
+    <br>
+    <pre>{{.}}<pre>
+
+</body>
+</html>

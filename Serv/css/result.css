@@ -1,0 +1,36 @@
+.ascii_art {
+    font-size: 20px;
+    color: #333;
+}
+
+.ascii_art_info {
+    position: absolute;
+    text-align: center;
+    border-bottom: 2px solid #e74c3c;
+    margin-left: 40px;
+}
+
+.result {
+    text-align: center;
+    border-bottom: 3px solid #e74c3c;
+}
+
+.info {
+    background: url('../img/Background.jpg') center no-repeat;
+    position: relative;
+    height: 150px;
+    background-size: cover;
+    opacity: 1.2;
+}
+
+.info_detail {
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-style: italic;
+    text-align: right;
+    position: absolute;
+    font-size: 10px;
+    border-bottom: 1px solid #e74c3c;
+    margin-right: 15px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ascii_Web</title>
+    <script src="https://kit.fontawesome.com/4b4b968c06.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/result.css" type="text/css">
+</head>
+<body>
+    <form action="/ascii-art" method="POST">
+        <div class="header">
+            <div class="header__texture"></div>
+            <div class="header__mask">
+                <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 L 0 0 C 25 100 75 100 100 0 L 100 100" fill="#fff"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="header__navbar">
+                    <div class="hearder__navbar--logo">
+                    </div>
+                    <div class="hearder__navbar--menu">
+                        <a href="https://ytrack.learn.ynov.com/intra/nantes/modules-nantes/ascii-art-web" class="header__navbar--menu-link"><i class="fas fa-map-pin"></i>  Module</a>
+                        <a href="https://git.ytrack.learn.ynov.com/EDUMONT1/Ascii_Art_Web" class="header__navbar--menu-link"><i class="fab fa-github"></i> Projet GITEA</a>
+                    </div>
+                </div>
+                <div class="header__instruction">
+                    <h2 class="header__instruction--titre">Bienvenue sur le générateur d'Ascii Art</h2>
+                    <h3 class="header__instruction--titre-detail"></h3>
+                </div>
+                <div class="header__chaine__de__caractere">
+                    <h4 class="header__consigne">Entrer la chaîne de caractère que vous souhaitez afficher en ASCII_ART !</h4>
+                    <br>
+                    <label for="string">Chaîne de caractère :</label>
+                    <input type="texte" name="string" id="string">
+                    <div class="header__option">
+                        <br>
+                        <br>
+                        <br>
+                        <label for="option"></label>
+                        <select name="option" id="option">
+                            <option value="Standard">Standard</option>
+                            <option value="Shadow">Shadow</option>
+                            <option value="Thinkertoy">Thinkertoy</option>
+                        </select>
+                    </div>
+                    <div class="header__valider">
+                        <input type="submit" value="Valider">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="ascii_art">
+        <h3 class="ascii_art_info">Résultat :</h3>
+    </div>
+    <br>
+    <div class="result">
+        <pre>{{.}}<pre>
+    </div>
+    <div class="info">
+        <h4 class="info_detail">Site réalisé par : DUMONT ELOUAN - PINOT ENZO - LOYER VIAUD MALO</h4>
+    </div>
+
+</body>
+</html>
